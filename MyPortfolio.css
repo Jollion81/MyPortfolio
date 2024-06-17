@@ -1,0 +1,162 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+   display: flex; 
+   position: relative;
+   width: 100%;
+   height: 850px;
+   justify-content: center;
+   align-items: center;
+   font-size: 2em;
+   font-weight: 800;
+   padding: 20px 20px;
+   padding-top: 10px;
+
+}
+section:nth-child(odd){
+    background: #A4F9FF;
+}
+section:nth-child(even){
+    background: #8ED7FF;
+}
+nav{
+    position: fixed;
+    top:0;
+   display: inline-block;
+    width: 100%;
+    padding: 5px, 20px;
+    margin: 5px, 20px;
+    color: white;
+    background: #083353;
+}
+nav a{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+nav a:hover,
+section#n1:hover~nav a[href="#n1"], 
+section#n2:hover~nav a[href="#n2"], 
+section#n3:hover~nav a[href="#n3"], 
+section#n4:hover~nav a[href="#n4"]
+ {
+    color: #0E3E44;
+    background: #A8E9F1;
+}
+
+nav a:acive {
+    background: #94FAB3;
+}
+.header {
+    position: fixed;
+    top:0;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    padding: 5px, 20px;
+    margin: 5px, 20px;
+    justify-content:space-between;
+   
+}
+.image {
+    width: 50%;
+    height: 50%;
+}
+.image2 {
+    width: 100%;
+    height: 100%;
+}
+
+.UploadMyCV {
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    font-size: 1em;
+    border-color: solid red 1px;
+    background-color: #083353;
+    color: aliceblue;
+    margin-right: 10px;
+}
+#n4 {
+    flex-direction: column;
+    align-items: start;
+    height: 250px;
+    padding: 10px, 20px;
+    margin: 10px, 20px;
+}
+#n4 .socialMedia {
+    display: flex;
+    gap: 25px;
+    padding: 10px, 20px;
+    margin: 10px, 20px;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1fr 2fr 1fr;
+}
+/* nav a {
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 8px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.projectTitleImage {
+display: flex;
+flex-direction: column;
+
+}
+
+.UploadMyCV {
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    font-size: 1em;
+    border-color: solid red 1px;
+    background-color: darkblue;
+    color: aliceblue;
+}
+.section1{
+    display: flex;
+    position: relative;
+    gap: 30px;
+    justify-content:space-around;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+.section3 {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    gap: 10px;
+    padding: 5px, 20px;
+    margin: 5px, 20px;
+}
+.section3 .socialMedia {
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    gap: 20px;
+  
+} */ 
