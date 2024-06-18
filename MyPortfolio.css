@@ -1,24 +1,44 @@
 *{
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
-
 section {
    display: flex; 
    position: relative;
    width: 100%;
    height: 850px;
-   justify-content: center;
+   justify-content:space-around;
    align-items: center;
    font-size: 2em;
    font-weight: 800;
    padding: 20px 20px;
-   padding-top: 10px;
+   padding-top: 10px; 
 
+}
+#n2 {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height:100%;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 20px 20px;
+}
+.about .infoAbout{
+
+    height:80%;
+    width: 70%;
 }
 section:nth-child(odd){
     background: #A4F9FF;
@@ -70,14 +90,14 @@ nav a:acive {
    
 }
 .image {
-    width: 50%;
-    height: 50%;
+    max-width: 50%;
+    max-height: 50%;
     box-shadow: 0px 5px 10px #000;
     border-radius: 20px;
 }
 .image2 {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     box-shadow: 0px 5px 10px #000;
     border-radius: 20px;
 }
@@ -112,11 +132,18 @@ nav a:acive {
     grid-template-columns: 2fr 3fr 1fr;
     justify-content:space-between;
     align-items: center;
-    flex-grow: 1fr 2fr 1fr;
     gap: 20px;
-    border: solid 1px black;
+    box-shadow: 0px 5px 10px #000;
     border-radius: 20px;
+    padding: 5px 20px;
 }
+.projectTitleImage {
+    display: flex;
+    flex-direction: column;
+    padding: 20px, 20px;
+    margin: 20px, 20px;
+    
+    }
 button {
     cursor: pointer;
     border-radius: 15px;
@@ -124,56 +151,15 @@ button {
     font-size: 0.5em;
     box-shadow: 0px 5px 10px #000;
 }
-/* nav a {
-    position: relative;
-    color: aliceblue;
-    text-decoration: none;
-    justify-content: space-around;
-    padding: 8px 25px;
-    font-size: 1em;
-    text-transform: uppercase;
+@media (max-width: 1075px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-.projectTitleImage {
-display: flex;
-flex-direction: column;
-
+@media (max-width: 590px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-.UploadMyCV {
-    top: 0;
-    right: 0;
-    border-radius: 10px;
-    font-size: 1em;
-    border-color: solid red 1px;
-    background-color: darkblue;
-    color: aliceblue;
-}
-.section1{
-    display: flex;
-    position: relative;
-    gap: 30px;
-    justify-content:space-around;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-}
-
-
-.section3 {
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content:left;
-    align-items:flex-start;
-    gap: 10px;
-    padding: 5px, 20px;
-    margin: 5px, 20px;
-}
-.section3 .socialMedia {
-    display: flex;
-    justify-content:left;
-    align-items:flex-start;
-    gap: 20px;
-  
-} */ 

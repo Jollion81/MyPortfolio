@@ -1,0 +1,19 @@
+
+{
+   "projects": [
+    {
+        "name": "Page with Tailwind",
+        "img": "MyTestProject1.png",
+        "desc": "In this project I used settings from Tailwind.In addition, some other settings were implemented.",
+        "btnName": "Github link",
+        "ref": "https://github.com/Jollion81/tailwind"
+    },
+   {
+        "name": "Form with mandatory fields",
+        "img": "MyTestProjectWeek2.png",
+        "desc": "In this project I used general approaches from html/css.I prepared and implemented a form for checking mandatory fields with restrictions.",
+        "btnName": "Github link",
+        "ref": "https://github.com/Jollion81/ProjectWeekTwoWithCheckingFields"
+   }
+   ]
+}
