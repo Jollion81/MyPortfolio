@@ -49,7 +49,7 @@ section:nth-child(even){
 nav{
     position: fixed;
     top:0;
-   display: inline-block;
+    display: inline-block;
     width: 100%;
     padding: 5px, 20px;
     margin: 5px, 20px;
@@ -117,8 +117,14 @@ nav a:acive {
     flex-direction: column;
     align-items: start;
     height: 250px;
-    padding: 10px, 20px;
-    margin: 10px, 20px;
+    padding: 5px, 5px;
+    margin: 5px, 5px;
+}
+
+#n4 .contacts {
+    padding: 0, 0;
+    margin: 0, 0;
+    cursor: pointer;
 }
 #n4 .socialMedia {
     display: flex;
@@ -158,8 +164,41 @@ button {
     }
 }
 @media (max-width: 590px) {
-    .about {
+    section {
         display: flex;
         flex-direction: column;
+        font-size: 1.2em;
+    }
+    nav{
+        position: fixed;
+        top:0;
+        display: inline-block;
+        width: 100%;
+        padding: 5px, 20px;
+        margin: 5px, 20px;
+        color: white;
+        background: #083353;
+    }
+    nav a{
+        position: relative;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 8px 15px;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .UploadMyCV{
+        font-size: 0.7em;
+    }
+    #n1 {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        gap: 40px;
+        align-items: center;
+    }
+    #n1 .image1Position {
+        padding-top: 40px;
     }
 }
