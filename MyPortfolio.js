@@ -22,7 +22,8 @@ fetch('project.json').then(function (res) {
                 <p>${project.desc}</p>
             </div>
             <div>
-                <button class="GithubLinkOnMyPortfolio" onclick="location.href='${project.ref}'">${project.btnName}</button>
+            <a href='${project.ref}'>Github<i class="fa-brands fa-github"></i></a>
+                
             </div> 
             </div>
 
